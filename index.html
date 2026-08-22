@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kimmeng Hong — AI Engineer, Computer Vision</title>
+<meta name="description" content="Kimmeng Hong — AI Engineer specializing in computer vision and deep learning. Master's student at Université Paris-Saclay.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230b0f10'/%3E%3Cpath d='M6 12V7h5M26 12V7h-5M6 20v5h5M26 20v5h-5' stroke='%23ef8f1e' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="hud" id="hud">
+  <div class="hud__inner">
+    <a href="#top" class="hud__mark" aria-label="Kimmeng Hong — home">
+      <span class="mark-bracket">[</span>KH<span class="mark-bracket">]</span>
+    </a>
+    <nav class="hud__nav" id="primary-nav" aria-label="Primary">
+      <a href="#about" data-nav="about">Profile</a>
+      <a href="#experience" data-nav="experience">Experience</a>
+      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#education" data-nav="education">Education</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="hud__controls">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M21.5 12h-2.4M4.9 12H2.5M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7M18.4 18.4l-1.7-1.7M7.3 7.3 5.6 5.6"/></g></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="hud__burger" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <div class="frame" data-reveal>
+        <span class="frame__corner frame__corner--tl"></span>
+        <span class="frame__corner frame__corner--tr"></span>
+        <span class="frame__corner frame__corner--bl"></span>
+        <span class="frame__corner frame__corner--br"></span>
+        <span class="frame__scan" aria-hidden="true"></span>
+
+        <p class="eyebrow">AI Engineer — Computer Vision &amp; Deep Learning</p>
+        <h1 class="hero__name">Kimmeng<br>Hong</h1>
+        <p class="hero__lede">
+          Master's student in Data Science at Université Paris-Saclay, building detection and
+          decision-support models for real-world sensing problems — from flood-rescue drones
+          to malware classification.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="assets/CV_Kimmeng_HONG.pdf" download>Download CV</a>
+          <a class="btn btn--ghost" href="#projects">View projects</a>
+        </div>
+
+        <p class="detect-label" aria-hidden="true">
+          <span class="detect-tag">PERSON</span><span class="detect-conf">99.8%</span>
+          <span class="detect-coords">[ x:0.14  y:0.09  w:0.72  h:0.81 ]</span>
+        </p>
+      </div>
+
+      <ul class="telemetry" aria-label="Highlights">
+        <li><span class="telemetry__stat">Top 1%</span><span class="telemetry__label">Kaggle House Price — 56 / 6,980 teams</span></li>
+        <li><span class="telemetry__stat">8th / 85</span><span class="telemetry__label">Sorbonne Malware Detection Challenge</span></li>
+        <li><span class="telemetry__stat">72.95% F1</span><span class="telemetry__label">CNN–LSTM Speaker Detection</span></li>
+        <li><span class="telemetry__stat">C1</span><span class="telemetry__label">English · B1 French · Native Khmer</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="about" data-reveal>
+    <div class="section__head">
+      <h2>Profile</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+    <div class="about__body">
+      <p>
+        I'm a Master's student in Data Science at <strong>Université Paris-Saclay</strong>, with a
+        double engineering degree in Applied Mathematics at <strong>ENSIIE</strong>, and prior
+        engineering training in Data Science at the <strong>Institut de Technologie du Cambodge</strong>.
+        My work sits at the intersection of computer vision, deep learning, and applied statistics —
+        building models with PyTorch that hold up outside the notebook.
+      </p>
+      <p>
+        Recent work spans fine-tuning YOLO detectors and semantic segmentation models for flooded
+        environments, synthetic multi-modal dataset generation in Unreal Engine, CNN–LSTM
+        architectures for spatio-temporal video tasks, and gradient-boosted models for tabular and
+        graph-structured data. I care about pipelines that are reproducible end to end — data,
+        training, and evaluation — not just leaderboard scores.
+      </p>
+    </div>
+    <address class="meta-line">Évry Courcouronnes, France</address>
+  </section>
+
+  <section class="section" id="experience" data-reveal>
+    <div class="section__head">
+      <h2>Experience</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__dot" aria-hidden="true"></div>
+        <div class="timeline__date">Apr 2026 — Oct 2026 <span class="badge badge--live">Current</span></div>
+        <h3 class="timeline__role">AI Engineer Intern <span class="timeline__at">— Audensiel</span></h3>
+        <p class="timeline__place">Boulogne-Billancourt, France</p>
+        <ul class="timeline__list">
+          <li>Developing a drone-based AI decision-support proof of concept for flood rescue operations.</li>
+          <li>Building a synthetic multi-modal flood dataset (RGB, depth, semantic segmentation, LiDAR) using Unreal Engine 5.5 and Cosys-AirSim across diverse flood scenarios.</li>
+          <li>Fine-tuning YOLOv26 and semantic segmentation models for person and obstacle detection in flooded environments.</li>
+          <li>Estimating flood risk for detected individuals to support rescue prioritization.</li>
+          <li>Developing a real-time visualization interface for rescue decision-making.</li>
+        </ul>
+        <ul class="tag-row" aria-label="Technologies used">
+          <li>PyTorch</li><li>YOLOv26</li><li>Unreal Engine 5.5</li><li>Cosys-AirSim</li><li>Semantic Segmentation</li><li>LiDAR</li>
+        </ul>
+      </li>
+
+      <li class="timeline__item">
+        <div class="timeline__dot" aria-hidden="true"></div>
+        <div class="timeline__date">May 2025 — Aug 2025</div>
+        <h3 class="timeline__role">AI Engineer Intern <span class="timeline__at">— AI Farms Co., Ltd.</span></h3>
+        <p class="timeline__place">Phnom Penh, Cambodia</p>
+        <ul class="timeline__list">
+          <li>Developed a proof-of-concept vision-based active speaker detection system from video input.</li>
+          <li>Modeled spatial and temporal patterns in face sequences using a CNN–LSTM architecture.</li>
+          <li>Built a reproducible pipeline for preprocessing, feature extraction, training, and evaluation.</li>
+          <li>Evaluated ResNet-50 and EfficientNet-B0 backbones on 3,786 labeled video scenes — up to 72.95% F1 on held-out test data.</li>
+        </ul>
+        <ul class="tag-row" aria-label="Technologies used">
+          <li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>CNN–LSTM</li><li>ResNet-50</li><li>EfficientNet-B0</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="projects" data-reveal>
+    <div class="section__head">
+      <h2>Projects</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="card">
+        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
+        <span class="card__tick card__tick--br" aria-hidden="true"></span>
+        <span class="metric">RMSE 1206 · TOP 1%</span>
+        <h3>Kaggle: House Price Prediction</h3>
+        <p>Ranked 56th of 6,980 teams using feature engineering and XGBoost ensembling on the classic Ames housing regression task.</p>
+        <ul class="tag-row"><li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>XGBoost</li></ul>
+        <a class="card__link" href="https://github.com/Kimmeng007/House-Price-Prediction" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="card">
+        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
+        <span class="card__tick card__tick--br" aria-hidden="true"></span>
+        <span class="metric">MACRO F1 0.59 · 8TH/85</span>
+        <h3>Malware Detection via Control-Flow Graphs</h3>
+        <p>Sorbonne Data Challenge: an XGBoost classifier over control-flow-graph features spanning 453 malware families.</p>
+        <ul class="tag-row"><li>XGBoost</li><li>SVD</li><li>Feature Engineering</li></ul>
+        <a class="card__link" href="https://github.com/Kimmeng007/Malware-Detection-CFG" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="card">
+        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
+        <span class="card__tick card__tick--br" aria-hidden="true"></span>
+        <span class="metric">F1 72.95%</span>
+        <h3>Vision-Based Active Speaker Detection</h3>
+        <p>Identifies which person in a video is speaking from visual signal alone, using a CNN–LSTM over face-sequence features.</p>
+        <ul class="tag-row"><li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>CNN–LSTM</li></ul>
+        <a class="card__link" href="https://github.com/Kimmeng007/Vision-Based-Active-Speaker-Detection" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="card">
+        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
+        <span class="card__tick card__tick--br" aria-hidden="true"></span>
+        <span class="metric">CHANGE-POINT MODEL</span>
+        <h3>Change-Point Detection in SNCF TER Time Series</h3>
+        <p>A Skew-Normal-based change-point model applied to monthly regularity data for the French regional rail network.</p>
+        <ul class="tag-row"><li>R</li><li>Time Series</li><li>Statistical Modeling</li></ul>
+        <a class="card__link" href="https://github.com/Kimmeng007/Change-Point-Detection-in-SNCF-TER-Time-Series" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="card">
+        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
+        <span class="card__tick card__tick--br" aria-hidden="true"></span>
+        <span class="metric">LOW-LABEL REGIME</span>
+        <h3>Semi-Supervised Learning on MNIST via GANs</h3>
+        <p>Explores semi-supervised classification with Generative Adversarial Networks under a tightly constrained labeling budget.</p>
+        <ul class="tag-row"><li>PyTorch</li><li>GANs</li></ul>
+        <a class="card__link" href="https://github.com/Kimmeng007/Semi-Supervised-Learning-on-MNIST-using-GANs" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="card">
+        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
+        <span class="card__tick card__tick--br" aria-hidden="true"></span>
+        <span class="metric">COX MODEL · RANDOM FOREST</span>
+        <h3>Survival Analysis for Breast Cancer</h3>
+        <p>Models overall patient survival, comparing a Cox proportional-hazards model against a random forest survival estimator.</p>
+        <ul class="tag-row"><li>R</li><li>Survival Analysis</li></ul>
+        <a class="card__link" href="https://github.com/Kimmeng007/Survival-Analysis-for-Breast-Cancer" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+      </article>
+
+    </div>
+
+    <a class="all-repos" href="https://github.com/Kimmeng007?tab=repositories" target="_blank" rel="noopener">All repositories on GitHub <span aria-hidden="true">↗</span></a>
+  </section>
+
+  <section class="section" id="skills" data-reveal>
+    <div class="section__head">
+      <h2>Skills</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="tag-row tag-row--lg"><li>Python</li><li>R</li><li>C++</li><li>SQL</li><li>Git</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Machine Learning &amp; Deep Learning</h3>
+        <ul class="tag-row tag-row--lg"><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>OpenCV</li><li>Computer Vision</li><li>Transformers</li><li>NLP</li><li>Time Series Forecasting</li><li>Survival Analysis</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Data &amp; Visualization</h3>
+        <ul class="tag-row tag-row--lg"><li>Pandas</li><li>NumPy</li><li>Feature Engineering</li><li>Pipeline Design</li><li>Matplotlib</li><li>Seaborn</li><li>Power BI</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="education" data-reveal>
+    <div class="section__head">
+      <h2>Education &amp; Honors</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <ul class="edu-list">
+      <li>
+        <div class="edu-date">Sep 2025 — Nov 2026 (expected)</div>
+        <div class="edu-body"><h3>Université Paris-Saclay</h3><p>M2 Data Science: Health, Insurance and Finance — Évry, France</p></div>
+      </li>
+      <li>
+        <div class="edu-date">Sep 2024 — Nov 2026 (expected)</div>
+        <div class="edu-body"><h3>ENSIIE</h3><p>Double Engineering Degree in Applied Mathematics (ITC–ENSIIE) — Évry, France</p></div>
+      </li>
+      <li>
+        <div class="edu-date">Oct 2020 — Jul 2025</div>
+        <div class="edu-body"><h3>Institut de Technologie du Cambodge</h3><p>Engineering Degree in Data Science — Phnom Penh, Cambodia</p></div>
+      </li>
+      <li>
+        <div class="edu-date">2024</div>
+        <div class="edu-body"><h3>Sophie Germain Scholarship — Fondation Mathématique Jacques Hadamard</h3><p>Merit-based excellence scholarship for Master's study in France; also selected for the Eiffel Excellence Scholarship, Campus France.</p></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section section--contact" id="contact" data-reveal>
+    <div class="section__head">
+      <h2>Contact</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+    </div>
+
+    <div class="contact-panel">
+      <dl class="contact-list">
+        <div><dt>Email</dt><dd><a href="mailto:hongkimmeng17@gmail.com">hongkimmeng17@gmail.com</a></dd></div>
+        <div><dt>GitHub</dt><dd><a href="https://github.com/Kimmeng007" target="_blank" rel="noopener">github.com/Kimmeng007</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="#" id="linkedin-link">add your LinkedIn URL</a></dd></div>
+        <div><dt>Location</dt><dd>Évry Courcouronnes, France</dd></div>
+      </dl>
+      <a class="btn btn--primary" href="assets/CV_Kimmeng_HONG.pdf" download>Download CV</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Kimmeng Hong. Built with plain HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
