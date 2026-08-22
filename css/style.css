@@ -218,6 +218,37 @@ p { margin: 0; }
   .frame__scan { display: none; }
 }
 
+.frame__layout {
+  display: flex; align-items: center; gap: clamp(1.75rem, 4vw, 3rem);
+}
+.frame__body { flex: 1; min-width: 0; }
+
+.hero__photo {
+  position: relative; flex: none;
+  width: clamp(140px, 20vw, 200px); height: clamp(140px, 20vw, 200px);
+  border: 1px solid var(--line-strong);
+}
+.hero__photo img {
+  width: 100%; height: 100%; object-fit: cover; filter: grayscale(0.15) contrast(1.03);
+}
+.hero__photo-tick {
+  position: absolute; width: 14px; height: 14px; z-index: 2;
+  border-color: var(--accent-2); border-style: solid; border-width: 0;
+}
+.hero__photo-tick--tl { top: -1px; left: -1px; border-top-width: 2px; border-left-width: 2px; }
+.hero__photo-tick--tr { top: -1px; right: -1px; border-top-width: 2px; border-right-width: 2px; }
+.hero__photo-tick--bl { bottom: -1px; left: -1px; border-bottom-width: 2px; border-left-width: 2px; }
+.hero__photo-tick--br { bottom: -1px; right: -1px; border-bottom-width: 2px; border-right-width: 2px; }
+
+.hero__photo-tag {
+  position: absolute; top: -13px; left: -1px; z-index: 3;
+  display: inline-flex; align-items: center; gap: 0.5em;
+  background: var(--accent-2); color: var(--bg-elevated);
+  font-family: var(--font-mono); font-size: 0.66rem; font-weight: 600;
+  letter-spacing: 0.05em; padding: 0.3em 0.55em;
+}
+.hero__photo-conf { opacity: 0.85; font-weight: 500; }
+
 .eyebrow {
   font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase;
   letter-spacing: 0.1em; color: var(--accent); margin-bottom: 1rem;
@@ -248,11 +279,6 @@ p { margin: 0; }
   font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-faint);
   border-top: 1px dashed var(--line); padding-top: 1rem;
 }
-.detect-tag {
-  background: var(--accent-soft); color: var(--accent);
-  padding: 0.2em 0.5em; border-radius: 2px; font-weight: 600;
-}
-.detect-conf { color: var(--accent-2); font-weight: 600; }
 .detect-coords { color: var(--ink-faint); }
 
 .telemetry {
@@ -414,4 +440,6 @@ p { margin: 0; }
   .section__head { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   .section__rule { width: 100%; }
   .edu-list li { grid-template-columns: 1fr; gap: 0.4rem; }
+  .frame__layout { flex-direction: column; align-items: flex-start; gap: 2.25rem; }
+  .hero__photo { width: 130px; height: 130px; }
 }
