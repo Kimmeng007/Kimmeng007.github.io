@@ -87,9 +87,9 @@
             <p class="eyebrow">AI Engineer, Data Scientist</p>
             <h1 class="hero__name">Kimmeng<br>Hong</h1>
             <p class="hero__lede">
-              Master's student in Data Science at Université Paris-Saclay, building detection and
-              decision-support models for real-world sensing problems — from flood-rescue drones
-              to malware classification.
+              Master's student in Data Science at Université Paris-Saclay, building detection,
+              decision-support, and agentic RAG systems for real-world problems — from flood-rescue
+              drones to financial document QA.
             </p>
 
             <div class="hero__actions">
@@ -112,18 +112,20 @@
         I'm a Master's student in Data Science at <strong>Université Paris-Saclay</strong>, with a
         double engineering degree in Applied Mathematics at <strong>ENSIIE</strong>, and prior
         engineering training in Data Science at the <strong>Institut de Technologie du Cambodge</strong>.
-        My work sits at the intersection of computer vision, deep learning, and applied statistics —
-        building models with PyTorch that hold up outside the notebook.
+        My work sits at the intersection of computer vision, deep learning, applied statistics, and —
+        more recently — agentic LLM systems, building models with PyTorch that hold up outside the
+        notebook.
       </p>
       <p>
         Recent work spans fine-tuning YOLO detectors and semantic segmentation models for flooded
         environments, synthetic multi-modal dataset generation in Unreal Engine, CNN–LSTM
-        architectures for spatio-temporal video tasks, and gradient-boosted models for tabular and
-        graph-structured data. I care about pipelines that are reproducible end to end — data,
-        training, and evaluation — not just leaderboard scores.
+        architectures for spatio-temporal video tasks, gradient-boosted models for tabular and
+        graph-structured data, and a LangGraph-based agentic RAG pipeline with hybrid retrieval for
+        question-answering over SEC filings. I care about pipelines that are reproducible end to
+        end — data, training, and evaluation — not just leaderboard scores.
       </p>
     </div>
-    <address class="meta-line">Évry Courcouronnes, France</address>
+    <address class="meta-line">Ivry-sur-Seine, France</address>
   </section>
 
   <section class="section" id="experience" data-reveal>
@@ -139,14 +141,13 @@
         <h3 class="timeline__role">AI Engineer Intern <span class="timeline__at">— Audensiel</span></h3>
         <p class="timeline__place">Boulogne-Billancourt, France</p>
         <ul class="timeline__list">
-          <li>Developing a drone-based AI decision-support proof of concept for flood rescue operations.</li>
-          <li>Building a synthetic multi-modal flood dataset (RGB, depth, semantic segmentation, LiDAR) using Unreal Engine 5.5 and Cosys-AirSim across diverse flood scenarios.</li>
-          <li>Fine-tuning YOLOv26 and semantic segmentation models for person and obstacle detection in flooded environments.</li>
-          <li>Estimating flood risk for detected individuals to support rescue prioritization.</li>
-          <li>Developing a real-time visualization interface for rescue decision-making.</li>
+          <li>Building a synthetic multi-modal flood-rescue dataset (RGB, depth, segmentation) in Unreal Engine 5.5 / Cosys-AirSim, spanning varying water levels, weather, and drone altitude.</li>
+          <li>Improving victim detection by fine-tuning a YOLO detector, raising Human-class AP50 by +12.3% (overall mAP50: 0.772).</li>
+          <li>Building a real-time perception pipeline (multi-object tracking, LiDAR-camera 3D fusion, interpretable risk scoring) to track and prioritize victims for rescue.</li>
+          <li>Developing a live web dashboard (FastAPI) streaming annotated video and a prioritized victim list during flights.</li>
         </ul>
         <ul class="tag-row" aria-label="Technologies used">
-          <li>PyTorch</li><li>YOLOv26</li><li>Unreal Engine 5.5</li><li>Cosys-AirSim</li><li>Semantic Segmentation</li><li>LiDAR</li>
+          <li>PyTorch</li><li>YOLOv26</li><li>Unreal Engine 5.5</li><li>Cosys-AirSim</li><li>LiDAR</li><li>FastAPI</li>
         </ul>
       </li>
 
@@ -272,6 +273,10 @@
         <h3>Data &amp; Visualization</h3>
         <ul class="tag-row tag-row--lg"><li><img class="tag-icon" src="https://cdn.simpleicons.org/pandas" alt="" loading="lazy">Pandas</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/numpy" alt="" loading="lazy">NumPy</li><li>Power BI</li><li>Matplotlib</li><li>Seaborn</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/streamlit" alt="" loading="lazy">Streamlit</li></ul>
       </div>
+      <div class="skill-group">
+        <h3>LLM &amp; Agentic AI</h3>
+        <ul class="tag-row tag-row--lg"><li><img class="tag-icon" src="https://cdn.simpleicons.org/langgraph" alt="" loading="lazy">LangGraph</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/langchain" alt="" loading="lazy">LangChain</li><li>RAG</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/googlegemini" alt="" loading="lazy">Gemini</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/mongodb" alt="" loading="lazy">MongoDB</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/fastapi" alt="" loading="lazy">FastAPI</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/docker" alt="" loading="lazy">Docker</li><li>CI/CD</li></ul>
+      </div>
     </div>
   </section>
 
@@ -312,7 +317,7 @@
         <div><dt>Email</dt><dd><a href="mailto:hongkimmeng17@gmail.com">hongkimmeng17@gmail.com</a></dd></div>
         <div><dt>GitHub</dt><dd><a href="https://github.com/Kimmeng007" target="_blank" rel="noopener">github.com/Kimmeng007</a></dd></div>
         <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/kimmeng-hong-09109222a/" id="linkedin-link" target="_blank" rel="noopener">https://www.linkedin.com/in/kimmeng-hong-09109222a/</a></dd></div>
-        <div><dt>Location</dt><dd>Évry Courcouronnes, France</dd></div>
+        <div><dt>Location</dt><dd>Ivry-sur-Seine, France</dd></div>
       </dl>
       <a class="btn btn--primary" href="assets/CV_Kimmeng_HONG.pdf" download>Download CV</a>
     </div>
