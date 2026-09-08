@@ -370,6 +370,12 @@ p { margin: 0; }
 }
 .card__link:hover { color: var(--accent); }
 
+.card__links {
+  display: flex; flex-wrap: wrap; gap: 0.9em 1.2em;
+  border-top: 1px solid var(--line); padding-top: 0.85rem; margin-top: 0.25rem;
+}
+.card__links .card__link { border-top: none; padding-top: 0; margin-top: 0; }
+
 .all-repos {
   display: inline-flex; gap: 0.4em; font-family: var(--font-mono); font-size: 0.85rem;
   color: var(--accent-2); text-decoration: none; letter-spacing: 0.03em;
