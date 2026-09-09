@@ -100,18 +100,6 @@ p { margin: 0; }
   outline-offset: 2px;
 }
 
-/* ---------- background grid overlay ---------- */
-.grid-overlay {
-  position: fixed; inset: 0; z-index: -1; pointer-events: none;
-  background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
-  background-size: 42px 42px;
-  opacity: 0.4;
-  -webkit-mask-image: linear-gradient(to bottom, black, transparent 85%);
-          mask-image: linear-gradient(to bottom, black, transparent 85%);
-}
-
 /* ---------- HUD header ---------- */
 .hud {
   position: sticky; top: 0; z-index: 100;
