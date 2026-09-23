@@ -68,17 +68,9 @@
   <section class="hero" id="top">
     <div class="hero__inner">
       <div class="frame" data-reveal>
-        <span class="frame__corner frame__corner--tl"></span>
-        <span class="frame__corner frame__corner--tr"></span>
-        <span class="frame__corner frame__corner--bl"></span>
-        <span class="frame__corner frame__corner--br"></span>
 
         <div class="frame__layout">
           <div class="hero__photo">
-            <span class="hero__photo-tick hero__photo-tick--tl" aria-hidden="true"></span>
-            <span class="hero__photo-tick hero__photo-tick--tr" aria-hidden="true"></span>
-            <span class="hero__photo-tick hero__photo-tick--bl" aria-hidden="true"></span>
-            <span class="hero__photo-tick hero__photo-tick--br" aria-hidden="true"></span>
             <img src="https://github.com/Kimmeng007.png?size=460" alt="Kimmeng Hong" width="230" height="230" loading="eager">
           </div>
 
@@ -162,7 +154,7 @@
           <li>Evaluated ResNet-50 and EfficientNet-B0 backbones on 3,786 labeled video scenes, achieving up to 72.95% F1 on held-out test data.</li>
         </ul>
         <ul class="tag-row" aria-label="Technologies used">
-          <li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>CNN–LSTM</li><li>ResNet-50</li><li>EfficientNet-B0</li>
+          <li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>CNN–LSTM</li><li>ResNet-50</li><li>EfficientNet-B0</li><li>Weights &amp; Biases</li>
         </ul>
       </li>
     </ol>
@@ -177,12 +169,18 @@
     <div class="project-grid">
 
       <article class="card">
-        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
-        <span class="card__tick card__tick--br" aria-hidden="true"></span>
+        <span class="metric">EER 0.28% · FACE + VOICE FUSION</span>
+        <h3>Biometric KYC Verification for Mobile Banking</h3>
+        <p>A face (ArcFace) + voice (ECAPA-TDNN) identity verification system for mobile banking KYC, with score-level fusion, per-risk-tier thresholds, and bootstrap confidence intervals. Under realistic mobile-degraded capture, fusion nearly halves the equal-error rate versus face alone (0.56% → 0.28%).</p>
+        <ul class="tag-row"><li>Python</li><li>PyTorch</li><li>InsightFace</li><li>SpeechBrain</li><li>Gradio</li><li>OpenCV</li></ul>
+        <a class="card__link" href="https://github.com/Kimmeng007/biometric-kyc-verification" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+      </article>
+
+      <article class="card">
         <span class="metric">AGENTIC RAG · LIVE DEMO</span>
         <h3>FinDocQA: Agentic RAG for SEC Filings</h3>
         <p>A retrieval-augmented QA system over SEC 10-K/10-Q filings, evaluated against the public FinanceBench benchmark. LangGraph agent with query decomposition, self-correction, and real tool-calling; hybrid (dense + BM25 + reranker) retrieval; every bug found, fixed, and measured end to end.</p>
-        <ul class="tag-row"><li>Python</li><li>LangGraph</li><li>RAG</li><li>Gemini</li><li>MongoDB</li></ul>
+        <ul class="tag-row"><li>Python</li><li>LangGraph</li><li>RAG</li><li>Gemini</li><li>MongoDB</li><li>MLflow</li></ul>
         <div class="card__links">
           <a class="card__link" href="https://findoc-assistant.streamlit.app/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
           <a class="card__link" href="https://github.com/Kimmeng007/findocqa" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
@@ -190,8 +188,6 @@
       </article>
 
       <article class="card">
-        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
-        <span class="card__tick card__tick--br" aria-hidden="true"></span>
         <span class="metric">RMSE 1206 · TOP 1%</span>
         <h3>Kaggle: House Price Prediction</h3>
         <p>Ranked 56th of 6,980 teams using feature engineering and XGBoost ensembling on the classic Ames housing regression task.</p>
@@ -200,8 +196,6 @@
       </article>
 
       <article class="card">
-        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
-        <span class="card__tick card__tick--br" aria-hidden="true"></span>
         <span class="metric">MACRO F1 0.59 · 8TH/85</span>
         <h3>Malware Detection via Control-Flow Graphs</h3>
         <p>Sorbonne Data Challenge: an XGBoost classifier over control-flow-graph features spanning 453 malware families.</p>
@@ -210,8 +204,6 @@
       </article>
 
       <article class="card">
-        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
-        <span class="card__tick card__tick--br" aria-hidden="true"></span>
         <span class="metric">F1 72.95%</span>
         <h3>Vision-Based Active Speaker Detection</h3>
         <p>Identifies which person in a video is speaking from visual signal alone, using a CNN–LSTM over face-sequence features.</p>
@@ -219,8 +211,6 @@
       </article>
 
       <article class="card">
-        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
-        <span class="card__tick card__tick--br" aria-hidden="true"></span>
         <span class="metric">CHANGE-POINT MODEL</span>
         <h3>Change-Point Detection in SNCF TER Time Series</h3>
         <p>A Skew-Normal-based change-point model applied to monthly regularity data for the French regional rail network.</p>
@@ -229,8 +219,6 @@
       </article>
 
       <article class="card">
-        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
-        <span class="card__tick card__tick--br" aria-hidden="true"></span>
         <span class="metric">LOW-LABEL REGIME</span>
         <h3>Semi-Supervised Learning on MNIST via GANs</h3>
         <p>Explores semi-supervised classification with Generative Adversarial Networks under a tightly constrained labeling budget.</p>
@@ -239,8 +227,6 @@
       </article>
 
       <article class="card">
-        <span class="card__tick card__tick--tl" aria-hidden="true"></span>
-        <span class="card__tick card__tick--br" aria-hidden="true"></span>
         <span class="metric">COX MODEL · RANDOM FOREST</span>
         <h3>Survival Analysis for Breast Cancer</h3>
         <p>Models overall patient survival, comparing a Cox proportional-hazards model against a random forest survival estimator.</p>
@@ -266,7 +252,7 @@
       </div>
       <div class="skill-group">
         <h3>Machine Learning &amp; Deep Learning</h3>
-        <ul class="tag-row tag-row--lg"><li><img class="tag-icon" src="https://cdn.simpleicons.org/pytorch" alt="" loading="lazy">PyTorch</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/tensorflow" alt="" loading="lazy">TensorFlow</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/scikitlearn" alt="" loading="lazy">Scikit-learn</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/opencv" alt="" loading="lazy">OpenCV</li><li>Computer Vision</li><li>Transformers</li><li>NLP</li><li>Time Series Forecasting</li><li>Survival Analysis</li></ul>
+        <ul class="tag-row tag-row--lg"><li><img class="tag-icon" src="https://cdn.simpleicons.org/pytorch" alt="" loading="lazy">PyTorch</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/tensorflow" alt="" loading="lazy">TensorFlow</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/scikitlearn" alt="" loading="lazy">Scikit-learn</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/opencv" alt="" loading="lazy">OpenCV</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/weightsandbiases" alt="" loading="lazy">Weights &amp; Biases</li><li>Computer Vision</li><li>Transformers</li><li>NLP</li><li>Time Series Forecasting</li><li>Survival Analysis</li></ul>
       </div>
       <div class="skill-group">
         <h3>Data &amp; Visualization</h3>
@@ -274,7 +260,7 @@
       </div>
       <div class="skill-group">
         <h3>LLM &amp; Agentic AI</h3>
-        <ul class="tag-row tag-row--lg"><li><img class="tag-icon" src="https://cdn.simpleicons.org/langgraph" alt="" loading="lazy">LangGraph</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/langchain" alt="" loading="lazy">LangChain</li><li>RAG</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/googlegemini" alt="" loading="lazy">Gemini</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/mongodb" alt="" loading="lazy">MongoDB</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/fastapi" alt="" loading="lazy">FastAPI</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/docker" alt="" loading="lazy">Docker</li><li>CI/CD</li></ul>
+        <ul class="tag-row tag-row--lg"><li><img class="tag-icon" src="https://cdn.simpleicons.org/langgraph" alt="" loading="lazy">LangGraph</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/langchain" alt="" loading="lazy">LangChain</li><li>RAG</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/googlegemini" alt="" loading="lazy">Gemini</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/mongodb" alt="" loading="lazy">MongoDB</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/fastapi" alt="" loading="lazy">FastAPI</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/docker" alt="" loading="lazy">Docker</li><li>CI/CD</li><li><img class="tag-icon" src="https://cdn.simpleicons.org/mlflow" alt="" loading="lazy">MLflow</li></ul>
       </div>
     </div>
   </section>
