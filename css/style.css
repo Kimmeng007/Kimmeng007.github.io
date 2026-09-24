@@ -229,16 +229,8 @@ p { margin: 0; }
 }
 
 /* ---------- timeline ---------- */
-.timeline { position: relative; display: flex; flex-direction: column; gap: 3rem; }
-.timeline::before {
-  content: ""; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 1px;
-  background: var(--line-strong);
-}
-.timeline__item { position: relative; padding-left: 2.2rem; }
-.timeline__dot {
-  position: absolute; left: 0; top: 6px; width: 11px; height: 11px;
-  border-radius: 50%; background: var(--bg); border: 2px solid var(--accent);
-}
+.timeline { position: relative; display: flex; flex-direction: column; gap: 3rem; list-style: none; margin: 0; padding: 0; }
+.timeline__item { position: relative; }
 .timeline__date {
   display: flex; align-items: center; gap: 0.6em;
   font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase;
@@ -251,7 +243,7 @@ p { margin: 0; }
 }
 .timeline__role { font-size: 1.4rem; margin-bottom: 0.15rem; }
 .timeline__at { color: var(--ink-dim); font-weight: 600; }
-.timeline__place { color: var(--ink-faint); font-size: 0.85rem; margin-bottom: 1rem; }
+.timeline__place { color: var(--ink-faint); font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
 .timeline__list { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.1rem; max-width: var(--measure); }
 .timeline__list li {
   position: relative; padding-left: 1.1rem; color: var(--ink-dim); font-size: 0.97rem;
@@ -271,6 +263,11 @@ p { margin: 0; }
 .tag-icon { width: 1.1em; height: 1.1em; flex: none; }
 
 /* ---------- projects ---------- */
+.project-group + .project-group { margin-top: 2.5rem; }
+.project-group__title {
+  font-family: var(--font-mono); font-size: 1.15rem; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--ink); font-weight: 600; margin-bottom: 1.25rem;
+}
 .project-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.25rem; margin-bottom: 2.25rem;
@@ -281,6 +278,11 @@ p { margin: 0; }
   padding: 1.6rem; display: flex; flex-direction: column; gap: 0.75rem;
   transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
+.card__media {
+  display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left;
+  border: 1px solid var(--line); border-radius: 6px; background: #fdfdfc;
+}
+.card__media--contain { object-fit: contain; object-position: center; }
 .card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12); }
 .card .metric {
   align-self: flex-start;

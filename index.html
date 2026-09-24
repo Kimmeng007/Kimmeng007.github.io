@@ -31,6 +31,16 @@
   ]
 }
 </script>
+<script>
+(function () {
+  var theme = "dark";
+  try {
+    var stored = localStorage.getItem("theme");
+    if (stored === "light" || stored === "dark") theme = stored;
+  } catch (e) {}
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -78,9 +88,10 @@
             <p class="eyebrow">AI Engineer, Data Scientist</p>
             <h1 class="hero__name">Kimmeng<br>Hong</h1>
             <p class="hero__lede">
-              Master's student in Data Science at Université Paris-Saclay, building detection,
-              decision-support, and agentic RAG systems for real-world problems, from flood-rescue
-              drones to financial document QA.
+              Master’s student in Data Science at Université Paris-Saclay, with experience across
+              classical machine learning, deep learning and computer vision (YOLO, biometric
+              verification), and LLM-based systems (RAG, agentic AI). Comfortable building and
+              deploying models, from data preprocessing to production-facing APIs.
             </p>
 
             <div class="hero__actions">
@@ -108,12 +119,11 @@
         notebook.
       </p>
       <p>
-        Recent work spans fine-tuning YOLO detectors and semantic segmentation models for flooded
-        environments, synthetic multi-modal dataset generation in Unreal Engine, CNN–LSTM
-        architectures for spatio-temporal video tasks, gradient-boosted models for tabular and
-        graph-structured data, and a LangGraph-based agentic RAG pipeline with hybrid retrieval for
-        question-answering over SEC filings. I care about pipelines that are reproducible end to
-        end (data, training, and evaluation), not just leaderboard scores.
+        Recent work spans object detection and semantic segmentation, face and voice biometric
+        verification, CNN–LSTM models for video, gradient-boosted models for tabular and
+        graph-structured data, and an agentic RAG pipeline with hybrid retrieval for
+        question-answering over financial filings. I care about pipelines that are reproducible
+        end to end (data, training, and evaluation), not just benchmark accuracy.
       </p>
     </div>
     <address class="meta-line">Ivry-sur-Seine, France</address>
@@ -127,7 +137,6 @@
 
     <ol class="timeline">
       <li class="timeline__item">
-        <div class="timeline__dot" aria-hidden="true"></div>
         <div class="timeline__date">Apr 2026 — Oct 2026 <span class="badge badge--live">Current</span></div>
         <h3 class="timeline__role">AI Engineer Intern <span class="timeline__at">— <a href="https://www.audensiel.fr/" target="_blank" rel="noopener">Audensiel</a></span></h3>
         <p class="timeline__place">Boulogne-Billancourt, France</p>
@@ -143,7 +152,6 @@
       </li>
 
       <li class="timeline__item">
-        <div class="timeline__dot" aria-hidden="true"></div>
         <div class="timeline__date">May 2025 — Aug 2025</div>
         <h3 class="timeline__role">AI Engineer Intern <span class="timeline__at">— <a href="https://aifarm.dev/" target="_blank" rel="noopener">AI Farms Co., Ltd.</a></span></h3>
         <p class="timeline__place">Phnom Penh, Cambodia</p>
@@ -166,9 +174,12 @@
       <span class="section__rule" aria-hidden="true"></span>
     </div>
 
-    <div class="project-grid">
+    <div class="project-group">
+      <h3 class="project-group__title">LLM, Deep Learning &amp; Computer Vision</h3>
+      <div class="project-grid">
 
       <article class="card">
+        <img class="card__media card__media--contain" src="assets/projects/kyc-fusion-roc.jpg" alt="ROC curves comparing face, voice, and fused verification under mobile capture" loading="lazy">
         <span class="metric">EER 0.28% · FACE + VOICE FUSION</span>
         <h3>Biometric KYC Verification for Mobile Banking</h3>
         <p>A face (ArcFace) + voice (ECAPA-TDNN) identity verification system for mobile banking KYC, with score-level fusion, per-risk-tier thresholds, and bootstrap confidence intervals. Under realistic mobile-degraded capture, fusion nearly halves the equal-error rate versus face alone (0.56% → 0.28%).</p>
@@ -177,6 +188,7 @@
       </article>
 
       <article class="card">
+        <img class="card__media" src="assets/projects/findocqa-demo.jpg" alt="FinDocQA app answering a question about 3M dividends with cited filing excerpts" loading="lazy">
         <span class="metric">AGENTIC RAG · LIVE DEMO</span>
         <h3>FinDocQA: Agentic RAG for SEC Filings</h3>
         <p>A retrieval-augmented QA system over SEC 10-K/10-Q filings, evaluated against the public FinanceBench benchmark. LangGraph agent with query decomposition, self-correction, and real tool-calling; hybrid (dense + BM25 + reranker) retrieval; every bug found, fixed, and measured end to end.</p>
@@ -188,6 +200,23 @@
       </article>
 
       <article class="card">
+        <img class="card__media card__media--contain" src="assets/projects/gan-accuracy.jpg" alt="Test accuracy versus number of labeled samples for the supervised baseline and semi-supervised GAN" loading="lazy">
+        <span class="metric">LOW-LABEL REGIME</span>
+        <h3>Semi-Supervised Learning on MNIST via GANs</h3>
+        <p>Explores semi-supervised classification with Generative Adversarial Networks under a tightly constrained labeling budget.</p>
+        <ul class="tag-row"><li>PyTorch</li><li>GANs</li></ul>
+        <a class="card__link" href="https://github.com/Kimmeng007/Semi-Supervised-Learning-on-MNIST-using-GANs" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
+      </article>
+
+      </div>
+    </div>
+
+    <div class="project-group">
+      <h3 class="project-group__title">Classical ML &amp; Statistics</h3>
+      <div class="project-grid">
+
+      <article class="card">
+        <img class="card__media card__media--contain" src="assets/projects/house-price.jpg" alt="Actual versus predicted house sale prices from the XGBoost model" loading="lazy">
         <span class="metric">RMSE 1206 · TOP 1%</span>
         <h3>Kaggle: House Price Prediction</h3>
         <p>Ranked 56th of 6,980 teams using feature engineering and XGBoost ensembling on the classic Ames housing regression task.</p>
@@ -196,6 +225,7 @@
       </article>
 
       <article class="card">
+        <img class="card__media card__media--contain" src="assets/projects/malware-svd.jpg" alt="Cumulative explained variance of the SVD components used for malware detection" loading="lazy">
         <span class="metric">MACRO F1 0.59 · 8TH/85</span>
         <h3>Malware Detection via Control-Flow Graphs</h3>
         <p>Sorbonne Data Challenge: an XGBoost classifier over control-flow-graph features spanning 453 malware families.</p>
@@ -204,13 +234,7 @@
       </article>
 
       <article class="card">
-        <span class="metric">F1 72.95%</span>
-        <h3>Vision-Based Active Speaker Detection</h3>
-        <p>Identifies which person in a video is speaking from visual signal alone, using a CNN–LSTM over face-sequence features.</p>
-        <ul class="tag-row"><li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>CNN–LSTM</li></ul>
-      </article>
-
-      <article class="card">
+        <img class="card__media card__media--contain" src="assets/projects/sncf-change-point.jpg" alt="Grand Est cancelled trains time series with a detected breaking point at 2022-06 and before/after distributions" loading="lazy">
         <span class="metric">CHANGE-POINT MODEL</span>
         <h3>Change-Point Detection in SNCF TER Time Series</h3>
         <p>A Skew-Normal-based change-point model applied to monthly regularity data for the French regional rail network.</p>
@@ -219,14 +243,7 @@
       </article>
 
       <article class="card">
-        <span class="metric">LOW-LABEL REGIME</span>
-        <h3>Semi-Supervised Learning on MNIST via GANs</h3>
-        <p>Explores semi-supervised classification with Generative Adversarial Networks under a tightly constrained labeling budget.</p>
-        <ul class="tag-row"><li>PyTorch</li><li>GANs</li></ul>
-        <a class="card__link" href="https://github.com/Kimmeng007/Semi-Supervised-Learning-on-MNIST-using-GANs" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
-      </article>
-
-      <article class="card">
+        <img class="card__media card__media--contain" src="assets/projects/survival-km.jpg" alt="Kaplan-Meier survival curves by tumor stage" loading="lazy">
         <span class="metric">COX MODEL · RANDOM FOREST</span>
         <h3>Survival Analysis for Breast Cancer</h3>
         <p>Models overall patient survival, comparing a Cox proportional-hazards model against a random forest survival estimator.</p>
@@ -234,6 +251,7 @@
         <a class="card__link" href="https://github.com/Kimmeng007/Survival-Analysis-for-Breast-Cancer" target="_blank" rel="noopener">View repo <span aria-hidden="true">↗</span></a>
       </article>
 
+      </div>
     </div>
 
     <a class="all-repos" href="https://github.com/Kimmeng007?tab=repositories" target="_blank" rel="noopener">All repositories on GitHub <span aria-hidden="true">↗</span></a>
